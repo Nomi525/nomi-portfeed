@@ -1,5 +1,118 @@
+/* Reset  */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+/* body */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Raleway-regular";
+}
+/* fonts  */
+
+@font-face {
+  font-family: "Raleway-regular";
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "Raleway-medium";
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: "Raleway-bold";
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: "Raleway-extrabold";
+  src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Raleway-semibold";
+  src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Raleway-black";
+  src: url(../fonts/Raleway-Black.ttf);
+}
+
+/* colors  */
+
+:root {
+  --primary: #00bfff;
+  --secondary: #84c0d4;
+  --ternary: #07267c;
+  --danger: #fe4545;
+  --success: rgb(2, 88, 2);
+  --dark: #000000;
+  --pure: #fefefe;
+  --light: #e0dcdc;
+  --heaven: #ffffff;
+  --footer: #0000ff;
+}
+.bgnav {
+  background-color: var(--pure);
+}
+/* Top Navbar */
+nav .navbar-nav a {
+  font-family: "Raleway-semibold";
+  color: var(--ternary);
+}
+nav .navbar-nav .active {
+  color: var(--secondary);
+}
+header .hero {
+  /* Header Hero Section */
+  background-color: var(--light);
+  min-height: 550px;
+}
+header .hero div > img {
+  background-repeat: no-repeat;
+  height: 400px;
+}
+header .hero div h5 {
+  color: var(--primary);
+}
+header .hero div h1 {
+  font-family: "Raleway-bold";
+  color: var(--ternary);
+  font-size: 40px;
+}
+header .hero div h4 {
+  font-size: 20px;
+  font-family: "Raleway-medium";
+  color: var(--ternary);
+}
+header .hero div p {
+  font-weight: 100;
+}
+header .hero div .btn1 {
+  color: var(--pure);
+}
+header .hero div .btn1:hover {
+  background-color: var(--success);
+}
+header .hero div .btn2 {
+  color: var(--dark);
+  font-weight: 100;
+  border: 1px solid var(--ternary);
+}
+/* middlehero */
+.middlehero {
+  background-color: var(--pure);
+  min-height: 140px;
+  position: relative;
+  bottom: 70px;
+}
+section div .h3 {
+  font-size: 18px;
+  font-family: "Raleway-semibold";
+  color: var(--ternary);
+}
+section div .h6 {
+  font-size: 15px;
+  font-family: "Raleway-semibold";
+  color: var(--primary);
 }
